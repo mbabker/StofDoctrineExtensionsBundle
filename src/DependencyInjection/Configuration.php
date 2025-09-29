@@ -51,6 +51,7 @@ class Configuration implements ConfigurationInterface
                     ->scalarNode('sluggable')->defaultFalse()->end()
                     ->scalarNode('tree')->defaultFalse()->end()
                     ->scalarNode('loggable')->defaultFalse()->end()
+                    ->scalarNode('revisionable')->defaultFalse()->end()
                     ->scalarNode('ip_traceable')->defaultFalse()->end()
                     ->scalarNode('sortable')->defaultFalse()->end()
                     ->scalarNode('softdeleteable')->defaultFalse()->end()

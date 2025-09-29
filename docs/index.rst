@@ -15,7 +15,9 @@ Features
 * **Timestampable** - updates date fields on create, update and even property change.
 * **Blameable** - updates string or association fields on create, update and even
   property change with a user name resp. reference.
-* **Loggable** - helps tracking changes and history of objects, also supports
+* **Loggable** - legacy extension for tracking changes and history of objects, also supports
+  version management.
+* **Revisionable** - helps tracking changes and history of objects, also supports
   version management.
 * **Sortable** - makes any document or entity sortable
 * **Translator** - explicit way to handle translations

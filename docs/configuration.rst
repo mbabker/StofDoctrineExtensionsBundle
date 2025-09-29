@@ -34,6 +34,12 @@ to register their mapping in Doctrine when you want to use them.
                             dir: "%kernel.project_dir%/vendor/gedmo/doctrine-extensions/src/Loggable/Entity"
                             alias: GedmoLoggable # (optional) it will default to the name set for the mapping
                             is_bundle: false
+                        gedmo_revisionable:
+                            type: attribute
+                            prefix: Gedmo\Revisionable\Entity
+                            dir: "%kernel.project_dir%/vendor/gedmo/doctrine-extensions/src/Revisionable/Entity"
+                            alias: GedmoRevisionable # (optional) it will default to the name set for the mapping
+                            is_bundle: false
                         gedmo_tree:
                             type: attribute
                             prefix: Gedmo\Tree\Entity
@@ -134,6 +140,7 @@ manager, declare the extensions you want to enable:
                     blameable: false
                     sluggable: false
                     loggable: false
+                    revisionable: false
                     ip_traceable: false
                     sortable: false
                     softdeleteable: false
@@ -157,6 +164,7 @@ manager, declare the extensions you want to enable:
                         blameable="false"
                         sluggable="false"
                         loggable="false"
+                        revisionable="false"
                         ip-traceable="false"
                         sortable="false"
                         softdeleteable="false"

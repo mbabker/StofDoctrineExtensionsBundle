@@ -22,6 +22,7 @@ configuration.
                 sluggable:      ~
                 translatable:   ~
                 loggable:       ~
+                revisionable:   ~
                 softdeleteable: ~
                 uploadable:     ~
 

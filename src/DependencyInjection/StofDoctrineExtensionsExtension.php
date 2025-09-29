@@ -36,6 +36,11 @@ class StofDoctrineExtensionsExtension extends Extension
             'loadClassMetadata',
             'preRemove',
         ),
+        'revisionable' => array(
+            'loadClassMetadata',
+            'onFlush',
+            'postPersist',
+        ),
         'sluggable' => array(
             'prePersist',
             'onFlush',
@@ -188,6 +193,7 @@ class StofDoctrineExtensionsExtension extends Extension
         $listenerPriorities = array(
             'translatable' => -10,
             'loggable' => 5,
+            'revisionable' => 5,
             'uploadable' => -5,
         );
 

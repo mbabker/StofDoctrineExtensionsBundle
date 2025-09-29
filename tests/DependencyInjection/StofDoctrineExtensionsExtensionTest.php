@@ -20,6 +20,7 @@ class StofDoctrineExtensionsExtensionTest extends TestCase
             array('ip_traceable'),
             array('loggable'),
             array('reference_integrity'),
+            array('revisionable'),
             array('sluggable'),
             array('softdeleteable'),
             array('sortable'),
